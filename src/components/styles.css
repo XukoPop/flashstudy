@@ -1,0 +1,32 @@
+.importer-dropzone {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .importer-dropzone.dragging {
+    transform: scale(1.02);
+    border-color: #3B82F6;
+    background-color: #EFF6FF;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .upload-icon {
+    animation: bounce 2s infinite ease-in-out;
+  }
+  
+  .file-input-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  }
+  
+  .json-preview {
+    font-family: 'Monaco', 'Consolas', monospace;
+    line-height: 1.4;
+  }
